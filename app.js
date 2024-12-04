@@ -7,7 +7,7 @@ function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
     responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {
-        rate:1.2
+        rate: 1.2
     })
 }
 
@@ -47,9 +47,9 @@ function gerarNumeroAleatorio() {
     if (quantidadeDeNumeroNaLista == numeroLimite) {
         listaNumerosSorteados = []
     }
-    
+
     if (listaNumerosSorteados.includes(numeroEscolhido)) {
-       return gerarNumeroAleatorio()
+        return gerarNumeroAleatorio()
     } else {
         listaNumerosSorteados.push(numeroEscolhido)
         console.log(listaNumerosSorteados)
